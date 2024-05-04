@@ -1,7 +1,13 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "types": ["@astrojs/image/client"],
-    "strictNullChecks": true
-  }
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"]
+    }
+  },
 }

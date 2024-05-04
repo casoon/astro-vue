@@ -1,42 +1,22 @@
-import { defineConfig} from 'astro/config';
-import sitemap from '@astrojs/sitemap';
-import compress from 'astro-compress';
-import alpine from '@astrojs/alpinejs';
-import partytown from '@astrojs/partytown';
-import criticalCSS from "astro-critical-css";
+import { defineConfig } from 'astro/config';
+import vue from '@astrojs/vue';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
-export default defineConfig(
-    {
-        server: { port: 8080 },
-        site: 'https://www.changethis.com',
-        integrations: [
-            sitemap({
-                changefreq: 'weekly',
-                priority: 0.7,
-                lastmod: new Date('2022-12-21')}),
-            compress({
-                css: false,
-                html: true,
-                img: false,
-                js: false,
-                svg: false,
-                logger: 0,
-            }),
-            alpine(),
-            partytown(),
-            criticalCSS()
-        ],
-        output: 'static',
-        vite: {
-            build: {
-                rollupOptions: {
-                    output: {
-                        assetFileNames: 'assets/[name][extname]',
-                    }
-                }
-            }
-        }
+export default defineConfig({
+  server: {
+    port: 8080
+  },
+  integrations: [vue()],
+  image: {
+    // Example: Enable the Sharp-based image service with a custom config
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+      config: {
+        limitInputPixels: false,
+      },
     },
-
-);
+  },
+  output: 'server',
+  adapter: cloudflare(),
+});
