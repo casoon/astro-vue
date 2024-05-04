@@ -2671,6 +2671,8 @@ __metadata:
     astro-critical-css: "npm:^0.0.4"
     astro-robots-txt: "npm:^0.5.0"
     deepmerge-ts: "npm:^5.1.0"
+    nanostores: "npm:^0.10.3"
+    vite: "npm:^5.2.11"
     vue: "npm:^3.3.8"
   languageName: unknown
   linkType: soft
@@ -7768,6 +7770,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanostores@npm:^0.10.3":
+  version: 0.10.3
+  resolution: "nanostores@npm:0.10.3"
+  checksum: 10c0/5541f527240f159acfe44b5f1c92366aa50d04d4814d25c685e6443dd43f5437c2c4a9e687378f6af759e90c13547da6b78e1d0042ff246d6ba6c881b65b306b
+  languageName: node
+  linkType: hard
+
 "negotiator@npm:^0.6.3":
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
@@ -10489,7 +10498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.2.10":
+"vite@npm:^5.2.10, vite@npm:^5.2.11":
   version: 5.2.11
   resolution: "vite@npm:5.2.11"
   dependencies:

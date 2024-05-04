@@ -36,6 +36,8 @@ const RAW_RUNTIME_STATE =
           ["astro-critical-css", "npm:0.0.4"],\
           ["astro-robots-txt", "npm:0.5.0"],\
           ["deepmerge-ts", "npm:5.1.0"],\
+          ["nanostores", "npm:0.10.3"],\
+          ["vite", "virtual:a0afb184126515ce624b15cc4704be7fee55c5b019281215b9cf0e06dd354bdad4ae1a0c8da33270f449082bbfdd579b36a1f85ff0562716ade69155fd4187b9#npm:5.2.11"],\
           ["vue", "virtual:d642040e9946a8669f13840c96ae24f063b42ddc1047bdb333abe2ea9d6c5fe7e95c3e678813dcac45c2277c7b07613595fd3f0b259bc8149e94cf9d83f3b615#npm:3.4.26"]\
         ],\
         "linkType": "SOFT"\
@@ -2002,7 +2004,7 @@ const RAW_RUNTIME_STATE =
           ["@types/vue", null],\
           ["@types/vue__devtools-api", null],\
           ["@vue/devtools-api", null],\
-          ["nanostores", null],\
+          ["nanostores", "npm:0.10.3"],\
           ["vue", "virtual:d642040e9946a8669f13840c96ae24f063b42ddc1047bdb333abe2ea9d6c5fe7e95c3e678813dcac45c2277c7b07613595fd3f0b259bc8149e94cf9d83f3b615#npm:3.4.26"]\
         ],\
         "packagePeers": [\
@@ -3366,6 +3368,8 @@ const RAW_RUNTIME_STATE =
           ["astro-critical-css", "npm:0.0.4"],\
           ["astro-robots-txt", "npm:0.5.0"],\
           ["deepmerge-ts", "npm:5.1.0"],\
+          ["nanostores", "npm:0.10.3"],\
+          ["vite", "virtual:a0afb184126515ce624b15cc4704be7fee55c5b019281215b9cf0e06dd354bdad4ae1a0c8da33270f449082bbfdd579b36a1f85ff0562716ade69155fd4187b9#npm:5.2.11"],\
           ["vue", "virtual:d642040e9946a8669f13840c96ae24f063b42ddc1047bdb333abe2ea9d6c5fe7e95c3e678813dcac45c2277c7b07613595fd3f0b259bc8149e94cf9d83f3b615#npm:3.4.26"]\
         ],\
         "linkType": "SOFT"\
@@ -8487,6 +8491,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/nanoid-npm-5.0.7-3671c17ef0-10c0.zip/node_modules/nanoid/",\
         "packageDependencies": [\
           ["nanoid", "npm:5.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["nanostores", [\
+      ["npm:0.10.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/nanostores-npm-0.10.3-06f295b499-10c0.zip/node_modules/nanostores/",\
+        "packageDependencies": [\
+          ["nanostores", "npm:0.10.3"]\
         ],\
         "linkType": "HARD"\
       }]\
